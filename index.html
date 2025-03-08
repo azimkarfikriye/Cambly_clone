@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambly</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop class="background-video">
+                <source src="Cambly - Online İngilizce Öğrenme, Görüntülü İngilizce Konuş.mp4" type="video/mp4">
+            </video>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <img src="assets/cambbbly.png" alt="Cambly-Logo" class="navbar-logo" style="margin-right: 5px; margin-left: 15px;">
+                    <a class="navbar-brand fw-bolder text-white" href="#">Cambly</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Method</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Tutors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled text-white" aria-disabled="true">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Kids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Business</a>
+                            </li>
+                        </ul>
+                        <div class="button-container">
+                            <div class="dropdown">
+                                <button class="btn country-btn dropdown-toggle" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Country
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                                    <li><a class="dropdown-item" href="#">Amerika</a></li>
+                                    <li><a class="dropdown-item" href="#">Kanada</a></li>
+                                    <li><a class="dropdown-item" href="#">İngiltere</a></li>
+                                    <li><a class="dropdown-item" href="#">Almanya</a></li>
+                                    <li><a class="dropdown-item" href="#">Fransa</a></li>
+                                    <li><a class="dropdown-item" href="#">İspanya</a></li>
+                                    <li><a class="dropdown-item" href="#">İtalya</a></li>
+                                    <li><a class="dropdown-item" href="#">Avustralya</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindistan</a></li>
+                                    <li><a class="dropdown-item" href="#">Japonya</a></li>
+                                </ul>
+                            </div>
+                            <!-- Oturum Aç Butonu -->
+                            <button class="btn login-btn">Log in</button>
+                            <!-- Kaydol Butonu -->
+                            <button class="btn signup-btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1 class="text-center ">Learn real English.</h1>
+                <h1 class="text-center">Make real progress.</h1>
+                <button class="btn btn-start fw-bold">Get started</button>
+            </div>
+        </div>
+    </header>
+    <!-- yellow-section -->
+      <div class="yellow-container">
+        <div class="row info-bar">
+            <div class="info-item col-12 col-md-4">
+                <i class="bi bi-bar-chart-fill fs-3 fw-bolder"></i>
+                <span class="fw-bolder">All levels welcome</span>
+            </div>
+            <div class="info-item col-12 col-md-4">
+                <i class="bi bi-person-lines-fill fs-3 fw-bolder"></i>
+                <span class="fw-bolder">Real conversations with native speakers</span>
+            </div>
+            <div class="info-item col-12 col-md-4">
+                <i class="bi bi-geo-alt-fill fs-3 fw-bolder"></i>
+                <span class="fw-bolder">Anytime, anywhere, 24/7</span>
+            </div>
+        </div>
+    </div> 
+    
+    <!--Hedeflerini belirle section-->
+    <section>
+        <div class="hedef-container text-center p-5">
+            <div class="col-auto">
+                <div class="row">
+                    <h1 class="p-3 fw-bolder">Start with your goals</h1>
+                    <p class="text-muted fs-6">We recommend lessons, topics, and activities to help you reach your goals. You choose <br> the things that get you talking, making moves toward where you want to go.</p>
+                    <div class="mt-4">
+                        <button class="btn custom-yellow-btn btn-lg rounded-pill px-5 fw-bolder fs-6">Start learning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--photo section-->
+    <section class="photo-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Focus on your unique goals</p>
+                    </div>
+                    <img src="assets/image.webp" class="img-fluid custom-img" alt="Fotoğraf 1">
+                </div>
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Choose the way you learn</p>
+                    </div>
+                    <img src="assets/image-1.webp" class="img-fluid custom-img" alt="Fotoğraf 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Eğitmenleri keşfet section-->
+    <section>
+        <div class="hedef-container text-center p-5">
+            <div class="col-auto">
+                <div class="row">
+                    <h1 class="p-3 fw-bolder">Meet the right tutors for you</h1>
+                    <p class="text-muted fs-6">Build a team of tutors that matches your learning style and interests—so you get the <br> experience and feedback you need to grow.</p>
+                    <div class="mt-4">
+                        <button class="btn custom-yellow-btn btn-lg rounded-pill px-5 fw-bolder fs-6">Explore tutors</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--photo section-->
+    <section class="photo-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Spend your first week meeting tutors</p>
+                    </div>
+                    <img src="assets/image-3.webp" class="img-fluid custom-img" alt="Fotoğraf 1">
+                </div>
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Gather your learning team</p>
+                    </div>
+                    <img src="assets/image-4.webp" class="img-fluid custom-img" alt="Fotoğraf 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Gelişimi kaydet section-->
+    <section>
+        <div class="hedef-container text-center p-5">
+            <div class="col-auto">
+                <div class="row">
+                    <h1 class="p-3 fw-bolder">See your progress</h1>
+                    <p class="text-muted fs-6">Strengthen your skills in lessons, then keep learning with personalized activities based on <br> those lessons. And watch yourself grow over time.</p>
+                    <div class="mt-4">
+                        <button class="btn custom-yellow-btn btn-lg rounded-pill px-5 fw-bolder fs-6">Start learning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--photo section-->
+    <section class="photo-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Learn in and out of lessons</p>
+                    </div>
+                    <img src="assets/image-5.webp" class="img-fluid custom-img" alt="Fotoğraf 1">
+                </div>
+                <div class="col-md-6 col-12 position-relative">
+                    <div class="image-overlay">
+                        <p>Track how you grow</p>
+                    </div>
+                    <img src="assets/image-6.webp" class="img-fluid custom-img" alt="Fotoğraf 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--youtube section-->
+    <section class="video2-section text-center">
+        <div class="video2-container p-5">
+            <h1 class="fw-bold p-3">Progress, not perfection</h1>
+            <p>Learn from mistakes, without fear or judgment.</p>
+            <!-- YouTube Video -->
+            <div class="video-container p-5">
+                <iframe width="900" height="550" src="progress_not_perfection_video.webm"
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="white-container p-5 text-center" style="background-color: #fbf4ea;">
+            <div class="col-auto">
+                <div class="row">
+                    <h1 class="fw-bolder">Start today. Learn for life.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kartlar Bölümü -->
+    <div class="container-fluid" style="background-color: #fbf4ea; padding-left: 50px; padding-right: 50px;">
+        <div class="row justify-content-center" style="gap: 5px;">
+            <!-- Kart 1 -->
+            <div class="col-lg-4 col-md-6 col-12 d-flex flex-wrap mb-4" style="max-width: 400px;">
+                <div class="card" style="background-color: white; width: 100%; height: 620px;">
+                    <h1 class="fw-bold p-4">Small groups</h1>
+                    <p class="p-4 custom-paragraph" >Real-world practice in groups</p>
+                    <div class="card-body">
+                        <button class="btnn btn-select btn-sm btn-lg-xl rounded-pill px-5 fw-bolder">Select</button>
+                        <h6 class="custom-p text-start mt-5">STARTING FROM</h6>
+                        <p class="price-text">342 TL <sup> / mo</sup></p>
+                        <ul class="experience-list">
+                            <li>Work with a tutor and 1-2 students</li>
+                            <br>
+                            <li>Meet learners from around the world</li>
+                            <br>
+                            <li>Structured discussions for all levels</li>
+                            <br>
+                            <li> For adults 21+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Kart 2 -->
+            <div class="col-lg-4 col-md-6 col-12 d-flex flex-wrap mb-4" style="max-width: 400px;">
+                <div class="card" style="background-color: white; width: 100%; height: 620px;">
+                    <h1 class="fw-bold p-4">Private+</h1>
+                    <p class="p-4 custom-paragraph">Full access to private and group lessons</p>
+                    <div class="card-body">
+                        <button class="btnn btn-yellowselect  rounded-pill px-5 fw-bolder">Select</button> 
+                        <h6 class="custom-p text-start mt-5">STARTING FROM</h6>
+                        <p class="price-text">1,882 TL<sup> / mo</sup></p> 
+                        <ul class="experience-list">
+                            <li>Our most comprehensive experience</li>
+                            <br>
+                            <li>Take 100% private lessons or try groups too</li>
+                            <br>
+                            <li>Rewatch your lesson videos</li>
+                            <br>
+                            <li>Get personalized exercises between lessons</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Kart 3 -->
+            <div class="col-lg-4 col-md-6 col-12 d-flex flex-wrap mb-4" style="max-width: 400px;">
+                <div class="card" style="background-color: white; width: 100%; height: 620px;">
+                    <h1 class="fw-bold p-4">Kids</h1>
+                    <p class="p-4 custom-paragraph" >For kids under 18</p>
+                    <div class="card-body">
+                        <button class="btnn btn-select  rounded-pill px-5 fw-bolder">Select</button>
+                        <h6 class="custom-p text-start mt-5">STARTING FROM</h6>
+                        <p class="price-text">2,130 TL<sup> / mo</sup></p>
+                        <ul class="experience-list">
+                            <li>1:1 time with specialized tutors</li>
+                            <br>
+                            <li>Active learning through conversation</li>
+                            <br>
+                            <li>Beginner to advanced courses included</li>
+                            <br>
+                            <li>Fun games and activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5"> 
+            <div class="col-12 text-center">
+                <p class="text-center mb-5"> 
+                    Not ready to commit yet? Explore all Cambly has to offer without a subscription
+                </p>
+                <button class="btn btn-cambly rounded-pill px-5 m-5">Explore Cambly</button>
+            </div>
+        </div>  
+</div>
+<!-- Fotoğraf Bölümü -->
+<div class="full-width-image p-5">
+    <div class="image-content">
+        <!-- Sol taraf: Başlık, açıklama ve butonlar -->
+        <div class="left-section">
+            <h1 class="text-left">Cambly on the go</h1>
+            <p class="text-left">
+                Take lessons from anywhere. Do practice activities <br> 
+                anytime. Keep the learning going with our app.
+            </p>
+            <div class="store-buttons">
+                <img src="assets/Download_on_the_App_Store_Badge_EN_135x40.e5f849dd.svg" alt="Download on the App Store">
+                <img src="assets/Download_on_the_App_Store_Badge_EN_135x40.e5f849dd.svg" alt="Get it on Google Play">
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="assets/Cambly-LP-Camblyonthego-Phone-GIF-short.gif" alt="Cambly App Preview">
+        </div>
+    </div>
+</div>
+
+<!-- Bebek mavisi arka plan -->
+<div class="blue-background">
+    <div class="blue-content">
+        <div class="blue-left">
+            <img src="assets/image-7.webp" class="img-fluid" alt="Yeni Görsel">
+        </div>
+        <div class="blue-right">
+            <h2>Work your way</h2>
+            <p>Join the tutor community to earn money whenever <br> you want, wherever you are.</p>
+            <button class="btn btn-join_today rounded-pill px-5 p-3">Join today</button>
+        </div>
+    </div>
+</div>
+<!-- Sarı arka planlı bölüm -->
+<div class="yelloww-background">
+    <h2 class="p-5">Start the conversation</h2>
+    <div class="button-group">
+        <button class="btnn btn-get_started">Get Started</button>
+        <button class="btnn btn-explore_plans">Explore Plans</button>
+    </div>
+    <p class="login-text fs-5">
+        Already have an account? <a href="#" class="login-link">Log in</a>
+    </p>
+</div>
+<!--Footer section-->
+<section class="py-0 pt-5" style="background-color: #212121">
+    <div class="container-footer" style="padding-left: 50px; padding-right: 50px">
+      <div
+        class="row justify-content-lg-between g-0"
+        style="display: flex; gap: 10px"
+      >
+      <div class="row" id="roww">
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+          <h5 class="lh-lg fw-bold text-white">About</h5>
+          <ul class="list-unstyled mb-md-4 mb-lg-0">
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Help center</a
+              >
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Careers</a
+              >>
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Press</a
+              >>
+            </li>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+          <h5 class="lh-lg fw-bold text-white">Joın</h5>
+          <ul class="list-unstyled mb-md-4 mb-lg-0">
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Cambly for kids</a
+              >
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Cambly for business</a
+              >>
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Become a tutor</a
+              >>
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Become an ambassador</a
+              >>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+          <h5 class="lh-lg fw-bold text-white">Other</h5>
+          <ul class="list-unstyled mb-md-4 mb-lg-0">
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Privacy policy</a
+              >
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Your privacy choices</a
+              >>
+            </li>
+            <li class="lh-lg">
+              <a class="text-200 text-decoration-none text-white" href="#"
+                >Terms and conditions</a
+              >>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+            <h5 class="lh-lg fw-bold text-white">Social</h5>
+            <div class="social-icons d-flex gap-3">
+              <a href="#" class="text-white">
+                <i class="fab fa-facebook-f fs-5"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter fs-5"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-instagram fs-5"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-linkedin-in fs-5"></i>
+              </a>
+            </div>
+          </div>
+        <!--New section for buttons-->
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+            <div class="store-buttons d-flex gap-2">
+                <img src="assets/Download_on_the_App_Store_Badge_EN_135x40.e5f849dd.svg" alt="Download on the App Store" class="store-img">
+                <img src="assets/Download_on_the_App_Store_Badge_EN_135x40.e5f849dd.svg" alt="Get it on Google Play" class="store-img">
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="col-12 d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex align-items-center fw-bolder p-5">
+                <img src="assets/cambbbly.png" alt="Cambly Logo" class="cambly-logo" style="max-height: 60px;">
+                <span class="text-white ms-2 fs-1">Cambly</span>
+            </div>
+            <div class="text-white">
+                <span>&copy; 2025 Fikriye Azimkar. All rights reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>

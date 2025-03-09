@@ -277,7 +277,7 @@ body, html {
 }
 .full-width-image {
     position: relative; 
-    background-image: url('/bulanık.webp'); 
+    background-image: url('img/bulanık.webp'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
